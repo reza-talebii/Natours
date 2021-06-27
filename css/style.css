@@ -4,18 +4,20 @@
     --dark-green: #28b485;
 }
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
     line-height: 1.7;
     color: #777;
     padding: 1.9rem;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -88,7 +90,7 @@ a {
     padding-top: 2rem;
 }
 .header__logo > img {
-    width: 80px;
+    width: 5rem;
 }
 .header__content {
     display: flex;
@@ -107,7 +109,7 @@ a {
 @-webkit-keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-9rem);
     }
     100% {
         opacity: 1;
@@ -117,7 +119,7 @@ a {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-9rem);
     }
     100% {
         opacity: 1;
@@ -135,7 +137,7 @@ a {
 @-webkit-keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(9rem);
     }
     100% {
         opacity: 1;
@@ -145,7 +147,7 @@ a {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(9rem);
     }
     100% {
         opacity: 1;
@@ -159,7 +161,7 @@ a {
 @-webkit-keyframes BtnBottomToTop {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(3rem);
     }
     100% {
         opacity: 1;
@@ -169,7 +171,7 @@ a {
 @keyframes BtnBottomToTop {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(3rem);
     }
     100% {
         opacity: 1;
