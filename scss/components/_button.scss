@@ -35,9 +35,7 @@
         transform: translateY(-1px);
         box-shadow: 0 5px 10px rgba($black-color, 0.2);
     }
-    &--white {
-        background: $white-color;
-    }
+
     &--green {
         background: $medium-green;
     }
@@ -46,3 +44,16 @@
     -webkit-animation: BtnBottomToTop 1s;
     animation: BtnBottomToTop 1.5s;
 }
+// .btn-text {
+//     display: inline-block;
+//     text-transform: capitalize;
+//     color: $medium-green;
+//     padding: 0.2rem;
+//     border-bottom: 1px solid $medium-green;
+//     @include transition(all 0.3s);
+//     &:hover {
+//         background: $medium-green;
+//         border-radius: 40px;
+//         color: #fff;
+//     }
+// }

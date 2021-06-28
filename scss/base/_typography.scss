@@ -8,3 +8,45 @@ a {
     text-decoration: none;
     color: $dark-gray;
 }
+.header {
+    &__title {
+        font-size: 4rem;
+        color: $white-color;
+        letter-spacing: 2rem;
+        font-weight: 400;
+        -webkit-animation: moveInLeft 1.5s;
+        animation: moveInLeft 1.5s;
+    }
+    &__SubTitle {
+        color: $white-color;
+        letter-spacing: 0.9rem;
+        margin-bottom: 3rem;
+        -webkit-animation: moveInRight 1.5s;
+        animation: moveInRight 1.5s;
+    }
+}
+.section__title {
+    text-align: center;
+    margin-bottom: 5rem;
+    h2 {
+        text-transform: uppercase;
+        display: inline-block;
+        background: linear-gradient($light-green, $dark-green);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        @include transition(transform 0.4s, text-shadow 0.3s);
+        &:hover {
+            transform: skew(15deg, 2deg) scale(1.1);
+            text-shadow: 3px 0.9rem 0.8rem rgba($black-color, 0.2);
+        }
+    }
+}
+.box-title {
+    text-transform: uppercase;
+}
+.paragraph {
+    margin: 1rem 0;
+}

@@ -1,0 +1,8 @@
+.about {
+    background: $gray-section;
+    padding: 15rem 0;
+    margin-top: -20vh;
+    &__textBox:first-child {
+        margin-bottom: 2rem;
+    }
+}
