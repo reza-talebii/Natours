@@ -1,0 +1,43 @@
+.header {
+    height: 95vh;
+    background: linear-gradient(
+            to right bottom,
+            rgba($light-green, 0.8),
+            rgba($dark-green, 0.8)
+        ),
+        url('../img/hero.jpg') top/cover no-repeat;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    ////////// element /////////////////
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    &__logo > img {
+        width: 5rem;
+    }
+    &__content {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+    &__title {
+        font-size: 4rem;
+        color: $white-color;
+        letter-spacing: 2rem;
+        font-weight: 400;
+        -webkit-animation: moveInLeft 1.5s;
+        animation: moveInLeft 1.5s;
+    }
+    &__SubTitle {
+        color: $white-color;
+        letter-spacing: 0.9rem;
+        margin-bottom: 3rem;
+        -webkit-animation: moveInRight 1.5s;
+        animation: moveInRight 1.5s;
+    }
+}
