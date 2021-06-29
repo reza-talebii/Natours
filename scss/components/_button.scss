@@ -47,7 +47,8 @@
     animation: BtnBottomToTop 1.5s;
 }
 .btn-text {
-    display: inline-block;
+    display: inline-flex;
+    align-items: baseline;
     text-transform: capitalize;
     color: $medium-green;
     font-size: 1.6rem;
@@ -59,4 +60,7 @@
         border-radius: 4rem;
         color: #fff;
     }
+}
+.icon-btn {
+    margin-left: 0.5rem;
 }
