@@ -9,3 +9,10 @@
         ),
         url($address) top/cover no-repeat;
 }
+@mixin font-liner {
+    display: inline-block;
+    background: linear-gradient($light-green, $dark-green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

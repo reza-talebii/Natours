@@ -36,11 +36,7 @@ a {
     margin-bottom: 7rem;
     h2 {
         text-transform: uppercase;
-        display: inline-block;
-        background: linear-gradient($light-green, $dark-green);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        @include font-liner();
         font-size: 3.2rem;
         letter-spacing: 0.32rem;
         @include transition(transform 0.4s, text-shadow 0.3s);
