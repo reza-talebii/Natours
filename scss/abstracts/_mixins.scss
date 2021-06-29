@@ -1,3 +1,11 @@
 @mixin transition($property...) {
     transition: $property;
 }
+@mixin liner-bg-green($address) {
+    background: linear-gradient(
+            to right bottom,
+            rgba($light-green, 0.8),
+            rgba($dark-green, 0.8)
+        ),
+        url($address) top/cover no-repeat;
+}

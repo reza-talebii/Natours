@@ -1,11 +1,21 @@
-.about {
-    background: $gray-section;
-    padding: 22rem 0;
-    margin-top: -20vh;
-    &__textBox {
-        padding-right: 5.5rem;
+main {
+    .about-section {
+        background: $gray-section;
+        padding: 22rem 0;
+        margin-top: -20vh;
+        &__textBox {
+            padding-right: 5.5rem;
+        }
+        &__textBox:first-child {
+            margin-bottom: 3rem;
+        }
     }
-    &__textBox:first-child {
-        margin-bottom: 3rem;
+
+    .features-section {
+        background: linear-gradient(
+                rgba($color: $light-green, $alpha: 0.5),
+                rgba($color: $dark-green, $alpha: 0.5)
+            ),
+            url('../../img/nat-1-large.jpg');
     }
 }
