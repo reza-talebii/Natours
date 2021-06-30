@@ -19,7 +19,6 @@ a {
         color: $white-color;
         letter-spacing: 3.2rem;
         font-weight: 400;
-        -webkit-animation: moveInLeft 1.5s;
         animation: moveInLeft 1.5s;
     }
     &__SubTitle {
@@ -27,7 +26,6 @@ a {
         font-size: 2rem;
         letter-spacing: 1.75rem;
         margin-bottom: 3rem;
-        -webkit-animation: moveInRight 1.5s;
         animation: moveInRight 1.5s;
     }
 }

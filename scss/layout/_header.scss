@@ -1,6 +1,5 @@
 .header {
     height: 95vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     @include liner-bg-green('../img/hero-small.jpg');
     ////////// element /////////////////
@@ -13,7 +12,6 @@
         width: 7rem;
     }
     &__content {
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         display: flex;
         flex-direction: column;
