@@ -1,27 +1,25 @@
-main {
-    .about-section {
-        background: $gray-section;
-        padding: 25rem 0 30rem;
-        margin-top: -20vh;
-        &__textBox {
-            padding-right: 5.5rem;
-        }
-        &__textBox:first-child {
-            margin-bottom: 3rem;
-        }
+.about-section {
+    background: $gray-section;
+    padding: 25rem 0 30rem;
+    margin-top: -20vh;
+    &__textBox {
+        padding-right: 5.5rem;
     }
+    &__textBox:first-child {
+        margin-bottom: 3rem;
+    }
+}
 
-    .features-section {
-        @include liner-bg-green('../img/nat-4.jpg');
-        padding: 25rem 0;
-        margin-top: -15rem;
-        -webkit-clip-path: polygon(0 17%, 100% 0%, 100% 83%, 0% 100%);
-        clip-path: polygon(0 17%, 100% 0%, 100% 83%, 0% 100%);
-    }
-    .tours-section {
-        padding: 25rem 0;
-        margin-top: -15rem;
-        background: $gray-section;
-        text-align: center;
-    }
+.features-section {
+    @include liner-bg-green('../img/nat-4.jpg');
+    padding: 25rem 0;
+    margin-top: -15rem;
+    -webkit-clip-path: polygon(0 17%, 100% 0%, 100% 83%, 0% 100%);
+    clip-path: polygon(0 17%, 100% 0%, 100% 83%, 0% 100%);
+}
+.tours-section {
+    padding: 25rem 0 10rem;
+    margin-top: -15rem;
+    background: $gray-section;
+    text-align: center;
 }

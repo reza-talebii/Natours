@@ -9,9 +9,22 @@
         ),
         url($address) top/cover no-repeat;
 }
-@mixin liner-card($dark-color, $light-color) {
-    background: linear-gradient(to top left, $dark-color, $light-color);
+
+// CARD COMPONENT
+@mixin liner-card($dark-color, $light-color, $opacity: 1) {
+    background: linear-gradient(
+        to top left,
+        rgba($light-color, $opacity),
+        rgba($dark-color, $opacity)
+    );
 }
+@mixin liner-card-image($dark-color, $light-color, $address) {
+    background: linear-gradient(to top left, $dark-color, $light-color),
+        url($address) top/cover no-repeat;
+}
+// CARD COMPONENT
+
+//*TYPOGRAPHY
 @mixin font-liner {
     display: inline-block;
     background: linear-gradient($light-green, $dark-green);
@@ -19,3 +32,46 @@
     background-clip: text;
     color: transparent;
 }
+//*TYPOGRAPHY
+
+// btn COMPONENT
+@mixin btn($bg-after) {
+    font-size: 1.6rem;
+    &:visited,
+    &:link {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: 4rem;
+        padding: 1.5rem 3.5rem;
+        transition: all 0.3s;
+        z-index: 5;
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 4rem;
+        z-index: -1;
+        background: $bg-after;
+        transition: all 0.3s;
+    }
+    &:hover::after {
+        z-index: 1;
+        transform: scale(1.4);
+        opacity: 0;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($black-color, 0.2);
+    }
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5px 1rem rgba($black-color, 0.2);
+    }
+}
+// btn COMPONENT
