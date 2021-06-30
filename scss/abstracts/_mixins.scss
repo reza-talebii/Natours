@@ -9,6 +9,9 @@
         ),
         url($address) top/cover no-repeat;
 }
+@mixin liner-card($dark-color, $light-color) {
+    background: linear-gradient(to top left, $dark-color, $light-color);
+}
 @mixin font-liner {
     display: inline-block;
     background: linear-gradient($light-green, $dark-green);

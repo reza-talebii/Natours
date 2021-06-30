@@ -1,0 +1,54 @@
+.card {
+    perspective: 150rem;
+    height: 50rem;
+    position: relative;
+    margin: 0 2rem;
+    &__side {
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 2rem rgba($color: $black-color, $alpha: 0.1);
+        @include transition(transform 0.8s);
+        &--front {
+            background: $white-color;
+        }
+        &--back {
+            transform: rotateY(-180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white-color;
+
+            &-1 {
+                @include liner-card($dark-orange, $light-orange);
+            }
+            &-2 {
+                @include liner-card($dark-green, $light-green);
+            }
+            &-3 {
+                @include liner-card($dark-blue, $light-blue);
+            }
+            &-head {
+                font-size: 1.5rem;
+            }
+            &-price {
+                font-size: 6rem;
+                font-weight: 100;
+                margin: 1rem 0 5rem;
+            }
+        }
+    }
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+}
