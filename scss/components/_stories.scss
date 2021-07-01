@@ -1,0 +1,25 @@
+.story {
+    position: relative;
+    width: 73%;
+    margin: 0 auto 6rem;
+    padding: 4rem 2.5rem;
+    display: flex;
+    align-items: center;
+    background: $gray-section;
+    transform: skewX(-12deg);
+    box-shadow: 0 0 5rem rgba($color: $black-color, $alpha: 0.2);
+    // clip-path: polygon(9% 1%, 100% 0, 91% 100%, 0 100%);
+    & > * {
+        transform: skewX(12deg);
+    }
+    &__shape {
+        flex-basis: 30%;
+        img {
+            -webkit-clip-path: circle(39% at 49% 50%);
+            clip-path: circle(39% at 49% 50%);
+        }
+    }
+    &__text {
+        flex-basis: 70%;
+    }
+}
