@@ -9,12 +9,14 @@
 }
 
 .btn--animate {
+    -webkit-animation: BtnBottomToTop 1.5s;
     animation: BtnBottomToTop 1.5s;
 }
 .btn-text {
     display: inline-flex;
     align-items: baseline;
     text-transform: capitalize;
+    margin: 0 auto;
     color: $medium-green;
     font-size: 1.6rem;
     padding: 0.4rem;
