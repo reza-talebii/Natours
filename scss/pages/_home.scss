@@ -29,3 +29,28 @@
     position: relative;
     padding: 15rem 0 10rem;
 }
+.book-section {
+    padding: 15rem 0;
+    @include liner-bg-green-colors;
+    .book {
+        height: 50rem;
+        background: linear-gradient(
+                105deg,
+                rgba(255, 255, 255, 0.9) 0%,
+                rgba(255, 255, 255, 0.9) 50%,
+                transparent 50%
+            ),
+            url('../img/nat-10.jpg') center/cover no-repeat;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 5rem rgba($color: $black-color, $alpha: 0.2);
+        &__form {
+            flex-basis: 50%;
+            padding: 6rem;
+            padding-right: 14rem;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+    }
+}

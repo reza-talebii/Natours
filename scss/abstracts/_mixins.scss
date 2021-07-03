@@ -9,7 +9,9 @@
         ),
         url($address) top/cover no-repeat;
 }
-
+@mixin liner-bg-green-colors() {
+    background: linear-gradient(to right bottom, $light-green, $dark-green);
+}
 // CARD COMPONENT
 @mixin liner-card($dark-color, $light-color, $opacity: 1) {
     background: linear-gradient(
