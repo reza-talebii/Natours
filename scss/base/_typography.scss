@@ -48,8 +48,12 @@ a {
             text-shadow: 3px 0.9rem 0.8rem rgba($black-color, 0.2);
         }
     }
-    &:last-of-type {
+    &:nth-last-of-type(2) {
         margin-bottom: 4rem;
+    }
+    &:last-of-type {
+        margin-bottom: 2rem;
+        text-align: left;
     }
 }
 .title-box {
