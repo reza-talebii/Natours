@@ -39,6 +39,10 @@ a {
         font-weight: 400;
         -webkit-animation: moveInLeft 1.5s;
         animation: moveInLeft 1.5s;
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
     &__SubTitle {
         color: $white-color;
@@ -47,6 +51,10 @@ a {
         margin-bottom: 3rem;
         -webkit-animation: moveInRight 1.5s;
         animation: moveInRight 1.5s;
+        @include respond(phone) {
+            letter-spacing: 0.5rem;
+            font-size: 1.6rem;
+        }
     }
 }
 .section__title {

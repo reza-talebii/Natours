@@ -10,6 +10,9 @@ body {
     line-height: 1.7;
     box-sizing: border-box;
     text-transform: capitalize;
+    @include respond(phone) {
+        padding: 0;
+    }
 }
 
 img {

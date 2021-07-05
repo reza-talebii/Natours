@@ -33,9 +33,16 @@
         box-shadow: 0 0 2rem rgba($color: $black-color, $alpha: 0.5);
         cursor: pointer;
         position: fixed;
-        top: 6.5rem;
+        top: 6rem;
         right: 5rem;
         z-index: 5;
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3rem;
+            padding: 2rem 2.5rem;
+            height: 6rem;
+            width: 6rem;
+        }
         span {
             position: relative;
             margin: 1rem 0;
@@ -66,7 +73,7 @@
         position: fixed;
         width: 8rem;
         display: inline-block;
-        top: 6.5rem;
+        top: 6rem;
         right: 5rem;
         z-index: 2;
         transform: scale(0);
@@ -74,6 +81,10 @@
         border-radius: 50%;
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         background-image: radial-gradient(circle, $light-green, $dark-green);
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3rem;
+        }
     }
     &__menu {
         position: fixed;
@@ -99,7 +110,6 @@
     &__link {
         display: inline-block;
         padding: 1rem 1.5rem;
-
         color: $white-color;
         font-size: 3rem;
         @extend %weight-300;
@@ -116,6 +126,9 @@
             background-position: 100%;
             color: #55c57a;
             transform: translateX(1rem);
+        }
+        @include respond(phone) {
+            font-size: 2rem;
         }
     }
 }
