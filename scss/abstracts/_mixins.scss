@@ -107,7 +107,7 @@
     }
     @if ($breakpoint==tap-land) {
         //1200px
-        @media screen and (max-width: 75%) {
+        @media screen and (max-width: 75rem) {
             @content;
         }
     }

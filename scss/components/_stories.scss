@@ -8,9 +8,18 @@
     background: rgba($color: $gray-section, $alpha: 0.6);
     transform: skewX(-12deg);
     box-shadow: 0 0 5rem rgba($color: $black-color, $alpha: 0.3);
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+    @include respond(phone) {
+        transform: skewX(0deg);
+    }
 
     & > * {
         transform: skewX(12deg);
+        @include respond(phone) {
+            transform: skewX(0deg);
+        }
     }
     &__shape {
         position: relative;
@@ -27,6 +36,9 @@
     }
     &__text {
         flex-basis: 70%;
+        @include respond(tab-port) {
+            margin: 2rem 0;
+        }
     }
     &__caption {
         text-align: center;

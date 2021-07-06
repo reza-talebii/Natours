@@ -4,16 +4,29 @@
     .row {
         & > div:first-child {
             padding-right: 13rem;
+            @include respond(big-desktop) {
+                padding-right: 5rem;
+            }
+            @include respond(tap-land) {
+                margin-bottom: 5rem;
+                padding-right: 0;
+            }
         }
         & > div:last-child {
             padding-left: 13rem;
+            @include respond(big-desktop) {
+                padding-left: 5rem;
+            }
+            @include respond(tap-land) {
+                padding-left: 0;
+            }
         }
     }
     &__logo {
         display: flex;
         justify-content: center;
         margin-bottom: 10rem;
-        img {
+        picture {
             width: 15rem;
         }
     }
@@ -30,11 +43,13 @@
         display: flex;
         justify-content: space-between;
         list-style: none;
+        flex-wrap: wrap;
     }
     &__link {
         font-size: 1.5rem;
         color: $white-color;
         display: inline-block;
+        margin: 1.5rem 1rem;
         text-transform: uppercase;
 
         @include transition(all 0.3s);

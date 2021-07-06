@@ -2,7 +2,7 @@
     position: relative;
     &__image {
         position: absolute;
-        width: 29.4rem; //50%
+        width: 50%;
         box-shadow: 0 0 5rem rgba($color: $black-color, $alpha: 0.3);
         outline: 1.5rem solid transparent;
         outline-offset: 1.5rem;
@@ -25,5 +25,13 @@
     &__image--3 {
         top: 13rem;
         left: 12rem;
+    }
+    @include respond(tab-port) {
+        margin-top: 5rem;
+        margin-left: 10rem;
+    }
+    @include respond(phone) {
+        margin-top: 5rem;
+        margin-left: 0;
     }
 }

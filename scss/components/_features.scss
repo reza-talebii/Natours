@@ -7,7 +7,13 @@
     @include transition(transform 0.3s);
     cursor: pointer;
 
-    user-select: none;
+    -webkit-user-select: none;
+
+       -moz-user-select: none;
+
+        -ms-user-select: none;
+
+            user-select: none;
     &__icon {
         @include font-liner();
         font-size: 6rem;
